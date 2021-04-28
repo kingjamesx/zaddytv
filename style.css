@@ -1,0 +1,176 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #cccccc;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p{
+
+    text-align: center;
+    margin-top: 30px;
+    /*s*/
+}
+h1+p,.bg{
+    font-style: italic;
+    padding: 2rem;
+    font-size: 1.4rem;
+}
+h1{
+    display: inline;
+    margin-left: 5px;
+}
+.move-tv{
+    text-align: center;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+nav ul li img {
+   width:20px;
+   height: 20px;
+   margin: 10px;
+}
+ul li{
+    list-style: none;
+}
+ul li button{
+    width:120px;
+    height:50px;
+}
+
+button{
+    border: none;
+    font-size: 1rem;
+}
+button:hover{
+    cursor: pointer;
+     background-color: black;
+     color:white;
+        box-shadow: 4px 4px 5px white;
+}
+.btn1{
+    box-shadow: 4px 4px 9px black;
+}
+.parent{
+    width: 100%;
+    height:300px
+}
+.child {
+    width: 100%;
+  height: 100%;
+  background-color: black; /* fallback color */
+  background-image: url("headpic2.jpg");
+  background-position: center;
+  background-size: cover;
+}
+main{
+    display: flex;
+}
+.firstside{
+   width:30%;
+}
+.secondside{
+    width:70%;
+    display:flex;
+    flex-wrap: wrap;
+}
+.box1{
+   display: flex;
+    background-color: #dddddd;
+    flex-direction: column;
+     justify-content: space-around;
+     text-align: center;
+     box-shadow: 5px 5px 5px;
+    margin:20px;
+     flex-grow: 1;
+
+}
+.sbox1{
+    background-color: #dddddd;
+    flex-direction: column;
+    width:26rem;
+    justify-content: space-between;
+    text-align: center;
+    margin:20px auto;
+    box-shadow: 5px 5px 5px;
+}
+.box1 img{
+    height: 10rem;
+    object-fit: fill      
+}
+.esp{
+    margin-top: 4rem;
+}
+
+div .join-btn{
+    margin: auto;
+    margin-top: 10rem;
+    padding: 0.8rem;
+    width: 7rem;
+    background-color: #353c45;
+    align-items: center;
+    color:white;
+}
+div .join-btn:hover{
+     cursor: pointer;
+}
+
+div .join-btn p{
+    display: inline;
+    
+}
+footer{
+    background-color: #333333;
+    padding: 10px;
+    text-align: center;
+    color:white;
+}
+footer span{
+    color:#f1850a;
+}
+
+@media(max-width:768px){
+	main{
+		display: flex;
+		flex-direction: row;
+	}
+	.firstside,.secondside{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	.box1{
+		width: 300px;
+	
+	}
+	.sbox1{
+        width:300px;
+	}
+}
+@media(max-width:500px){
+	main{
+		display: flex;
+		flex-direction: column
+	}
+	.firstside,.secondside{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+	.box1{
+		width: 330px;
+	
+	}
+	.sbox1{
+		margin-left: 40px;
+		width:300px;
+	}
+}
